@@ -11,3 +11,5 @@
 * build application `uv build`
 
 ### VS Code extensions
+* In .vscode settings.json zijn recommended settings opgenomen. Installeren via vscode->extensions install recommended.
+

@@ -16,4 +16,16 @@
     "python.testing.cwd": "${workspaceFolder}/tests",
     "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
     "python.testing.autoTestDiscoverOnSaveEnabled": true,
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "pytest",
+            "database": "school",
+            "username": "student"
+        }
+    ],
 }
