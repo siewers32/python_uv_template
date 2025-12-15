@@ -1,0 +1,51 @@
+# ----------------------------------------------------------------------
+# 1. uv/pip Cache en Vaste Afhankelijkheden
+# ----------------------------------------------------------------------
+
+# uv en pip-tools genereren bestanden om de virtuele omgeving te beheren
+# Dit bestand bevat je exacte (gepinde) afhankelijkheden
+# De gebruiker moet dit genereren op basis van requirements.in / pyproject.toml
+/requirements.txt
+/requirements-dev.txt
+
+# Bestanden gegenereerd door uv of pip-compile
+*.pyc
+__pycache__/
+
+# ----------------------------------------------------------------------
+# 2. Virtuele Omgevingen (Zeer Belangrijk!)
+# ----------------------------------------------------------------------
+
+# De map waarin uv (of venv/conda) de geinstalleerde packages plaatst.
+# Deze moet ALTIJD genegeerd worden!
+.venv/
+venv/
+env/
+/venv
+/env
+*.egg-info/
+.python-version
+.env
+dist/
+/dist
+
+# ----------------------------------------------------------------------
+# 3. Build & Distributie Bestanden
+# ----------------------------------------------------------------------
+
+# Bestanden gegenereerd bij het maken van een distributie (wheel, sdist)
+/dist/
+/build/
+
+# De .mypy_cache is voor type-checking.
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Directory Services Store: metadata voor mappenweergave
+.DS_Store
+
+# Finder bestanden voor speciale weergaven
+.Spotlight-V100
+.Trashes
+Icon
